@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Fam Affair Baskets and More</title>
+    <!-- Import Styles -->
+    <link rel="stylesheet" href="./assets/styles.css" />
+    <!-- Import Vue.js -->
+    <script src="https://unpkg.com/vue@3.0.0-beta.12/dist/vue.global.js"></script>
+  </head>
+  <div>
+    <div id="app">
+      <div class="product-display"></div>
+        <div class="product-container"></div>
+          <div class="product-image"></div>
+        <img :src="Image" />
+        </div>
+      <div class="product-info"></div>
+      <h1>{{Product}}</h1>
+      <p v-if="inStock">In stock</p>
+      <p v-else>Out of Stock</p>
+    </div>
+  </div>
+</div>
+</div>
+</body>
+        
+    
+
+    <!-- Import Js -->
+    <script src="./main.js"></script>
+  </body>
+  <script>
+    const mountedApp = app.mount('#app')
+  </script>
+</html>
